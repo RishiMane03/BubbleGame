@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+    background-color: lightsteelblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#panel{
+    border-radius: 10px;
+    background-color: white;
+    width: 80%;
+    height: 80%;
+    overflow: hidden;
+}
+
+#ptop{
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 25%;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(105, 160, 232);
+}
+
+.elem{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.elem h2{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.box{
+    color: darkcyan;
+    font-weight: 600;
+    font-size: 23px;
+    padding: 10px 18px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+}
+
+#pbottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    width: 100%;
+    height: calc(100% - 80px);
+}
+
+.bubble{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(102, 147, 206);
+    color: white;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+.bubble:hover{
+    background-color: rgb(23, 90, 178);
+    background-color: darkcyan;
+    cursor: pointer;
+}
