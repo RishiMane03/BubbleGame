@@ -13,18 +13,20 @@ html,body{
 #main{
     width: 100%;
     height: 100%;
-    background-color: lightsteelblue;
+    background-color: rgb(251, 212, 218);
+    /* background-color: black; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #panel{
-    border-radius: 10px;
+    border-radius: 17px;
     background-color: white;
     width: 80%;
     height: 80%;
     overflow: hidden;
+    box-shadow: 2px 2px 20px rgb(74, 70, 70);
 }
 
 #ptop{
@@ -35,13 +37,17 @@ html,body{
     padding: 0px 25%;
     width: 100%;
     height: 80px;
-    background-color: rgb(105, 160, 232);
+    /* background-color: rgb(105, 160, 232); */
+    background-color: lightcoral;
+    /* background-color: rgb(105, 104, 104); */
 }
 
 .elem{
     display: flex;
     align-items: center;
     gap: 18px;
+    position: relative;
+    right: 50px;
 }
 
 .elem h2{
@@ -63,7 +69,7 @@ html,body{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 25px;
     padding: 10px;
     width: 100%;
     height: calc(100% - 80px);
@@ -75,14 +81,38 @@ html,body{
     justify-content: center;
     width: 50px;
     height: 50px;
-    background-color: rgb(102, 147, 206);
+    background-color: palevioletred;
     color: white;
     border-radius: 50%;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .bubble:hover{
     background-color: rgb(23, 90, 178);
     background-color: darkcyan;
     cursor: pointer;
+}
+
+/* GIF */
+
+.gif{
+    width: 75px;
+    height: 75px;
+    background-image: url('https://media.tenor.com/sjEDvFq1XhgAAAAi/peach-goma-crate-peach.gif');
+    background-size: cover; /* Adjust as needed (cover, contain, etc.) */
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    right: 250px;
+}
+
+.gif2{
+    width: 150px;
+    height: 150px;
+    background-image: url('https://media.tenor.com/wa9joT3KeXUAAAAi/peach-and-goma-peach-goma.gif');
+    background-size: cover; /* Adjust as needed (cover, contain, etc.) */
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    /* right: 250px; */
 }

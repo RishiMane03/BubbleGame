@@ -5,11 +5,14 @@ var hitrn = 0;
 function increaseScore(){
     score += 10;
     document.querySelector("#scoreVal").textContent = score;
+    document.querySelector("#scoreVal").style.color = "darkcyan";
 }
 
 function decreaseScore(){
     score -= 10;
+
     document.querySelector("#scoreVal").textContent = score;
+    document.querySelector("#scoreVal").style.color = "red";
 }
 
 function getNewHit(){
@@ -19,7 +22,7 @@ function getNewHit(){
 
 function makeBubble(){
     var clutter  = '';
-    for(let i=1; i<=108; i++){
+    for(let i=1; i<=84; i++){
         var rn = Math.floor(Math.random()*10);
         clutter += `<div class="bubble">${rn}</div>`;
     }
@@ -33,7 +36,7 @@ function runTimer(){
             document.querySelector("#timerValue").innerHTML = time;
         }else{
             clearInterval(timer);
-            document.querySelector("#pbottom").innerHTML = `<h1>Game Over Darlo</h1>`
+            document.querySelector("#pbottom").innerHTML = `<h1 style="font-size: 50px;">Game Over Darlo</h1> <div class="gif2"></div>`
         }
     },1000)
 }
